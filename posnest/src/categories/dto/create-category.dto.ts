@@ -1,6 +1,6 @@
 import { IsString } from 'class-validator'
 
 export class CreateCategoryDto {
-    @IsString()
+    @IsString({message: "El nombre no puede ir vacío"})
     name: string;
 }
